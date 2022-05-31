@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS COUNTER</title>
+    <style>
+        .container {
+            counter-reset: section;
+        }
+        
+        h1:first-of-type::before {
+            counter-set: section;
+        }
+        
+        h1::before {
+            counter-increment: section;
+            content: "Section "counter(section) ": ";
+        }
+        
+        h1 {
+            counter-reset: subsection;
+        }
+        
+        h2:first-of-type::before {
+            counter-set: subsection;
+            content: "Subsection " counter(section) "." counter(subsection) ": ";
+        }
+        
+        h2::before {
+            counter-increment: subsection;
+            content: "Subsection " counter(section) "." counter(subsection) ": ";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>PROVINCES</h1>
+        <div>
+            <h2>KIGALI</h2>
+            <h2>EAST</h2>
+            <h2>WEST</h2>
+            <h2>NORTH</h2>
+            <h2>SOUTH</h2>
+        </div>
+
+        <h1>DISTRICTS</h1>
+        <div>
+            <h2>GASABO</h2>
+            <h2>NYARUGENGE</h2>
+            <h2>KICUKIRO</h2>
+            <h2>NYABIHU</h2>
+            <h2>MUSANZE</h2>
+        </div>
+
+        <h1>SECTORS</h1>
+        <div>
+            <h2>NYAMIRAMBO</h2>
+            <h2>MASAKA</h2>
+            <h2>KANOMBER</h2>
+            <h2>NYARUGUNGA</h2>
+            <h2>NIBOYE</h2>
+        </div>
+        <h1>SECTORS</h1>
+        <div>
+            <h2>NYAMIRAMBO</h2>
+            <h2>MASAKA</h2>
+            <h2>KANOMBER</h2>
+            <h2>NYARUGUNGA</h2>
+            <h2>NIBOYE</h2>
+        </div>
+        <h1>SECTORS</h1>
+        <div>
+            <h2>NYAMIRAMBO</h2>
+            <h2>MASAKA</h2>
+            <h2>KANOMBER</h2>
+            <h2>NYARUGUNGA</h2>
+            <h2>NIBOYE</h2>
+        </div>
+        <h1>SECTORS</h1>
+        <div>
+            <h2>NYAMIRAMBO</h2>
+            <h2>MASAKA</h2>
+            <h2>KANOMBER</h2>
+            <h2>NYARUGUNGA</h2>
+            <h2>NIBOYE</h2>
+        </div>
+        <h1>SECTORS</h1>
+        <div>
+            <h2>NYAMIRAMBO</h2>
+            <h2>MASAKA</h2>
+            <h2>KANOMBER</h2>
+            <h2>NYARUGUNGA</h2>
+            <h2>NIBOYE</h2>
+        </div>
+        <h1>SECTORS</h1>
+        <div>
+            <h2>NYAMIRAMBO</h2>
+            <h2>MASAKA</h2>
+            <h2>KANOMBER</h2>
+            <h2>NYARUGUNGA</h2>
+            <h2>NIBOYE</h2>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM IMAGE BY TIME INTERVAL</title>
+</head>
+<body>
+    <img src="images/image_1.jpeg" alt="this is an image" class="img">
+
+</body>
+<script>
+    setInterval(function(){
+        let images = ['images/image_1.jpeg', 'images/image_2.jpeg', 'images/image_3.jpeg',
+        'images/image_4.jpeg', 'images/image_5.jpeg'
+    ]
+    ranIma=images[Math.floor(Math.random()*images.length)];
+    console.log("hello world")
+    document.querySelector('.img').src=ranIma;
+    
+    },1000)
+</script>
+</html>S

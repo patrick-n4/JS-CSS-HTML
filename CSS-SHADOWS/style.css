@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: conic-gradient(red 0deg ,red 90deg,orange 90deg, orange 180deg, green 180deg,green 270deg,cyan 270deg,cyan 360deg  );
+    border-radius: 50%;
+}
+.cont{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 20px 100px;
+    cursor: pointer;
+    box-shadow :10px 10px 5px lightblue;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid cyan;
+}

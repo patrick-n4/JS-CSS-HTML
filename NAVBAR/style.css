@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    padding: 16px 20px;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+
+li:last-child() {
+    float: right;
+}
+
+li:nth-child(1) {
+    background-color: rgb(39, 216, 69)
+}
+
+li:hover:not(.center) {
+    background-color: rgb(54, 50, 50);
+}
+
+.spp {
+    float: right;
+}
+
+@media only screen and (max-width:415px) {
+    li {
+        float: none;
+    }
+    li:last-child {
+        float: none;
+    }
+}

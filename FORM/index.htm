@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="whole_form">
+        <div class="head_form">
+            <p class="sign_up_form">SIGN UP FORM</p>
+        </div>
+        <div>
+            <form action="#" class="form">
+                <div>
+                    <label for="fname" class="fname">FIRST NAME</label><input type="text" required>
+                    <label for="lname" class="lname">LAST NAME</label><input type="text" required>
+                </div>
+                <div class="dob_hob">
+
+                    <div>
+                        <label for="dob" class="age">AGE</label><input type="date" required>
+                    </div>
+                    <div>
+                        <label for="hobbies" class="hobbies">HOBBIES</label><input type="text">
+                    </div>
+                </div>
+                <div>
+                    <label for="languages" class="languages">SPOKEN LANGUAGES</label><input type="checkbox">ENGLISH
+                    <input type="checkbox">KISWAHILI
+                    <input type="checkbox">FRENCH
+                    <input type="checkbox">KINYARWANDA
+                </div>
+                <label for="income" class="income"><span>INCOME</span> <input type="range" id="income_increase" step="10" min="20" max="100" value="20"> <p id="incomeDisplay">20K</p></label>
+
+
+                <div>
+                    <div>
+                        <label for="status" class="business">BUSINESS</label><select name="" id="">
+                            <option value="self_emp">SELF EMPLOYED</option>
+                            <option value="working">COMPANY/ORGANIsATION</option>
+                            <option value="student">STUDENT</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div>
+                    <button class="submit">SUBMIT</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="required">
+            * required
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

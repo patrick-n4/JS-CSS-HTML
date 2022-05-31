@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dropdown:hover>.dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    color: rgb(124, 170, 54);
+}
+
+.dropdown-content p {
+    padding: 1em;
+    font-size: xx-large;
+}
+
+::selection {
+    color: green;
+    background-color: gray;
+}

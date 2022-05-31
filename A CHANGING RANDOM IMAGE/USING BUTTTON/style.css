@@ -1,0 +1,28 @@
+    .container {
+        min-height: 50vh;
+        display: grid;
+        place-items: center;
+        /* justify-content: center; */
+        /* padding-bottom: 60px; */
+    }
+    
+    .container .content {
+        text-align: center;
+    }
+    
+    .container .content h1 {
+        font-size: 40px;
+        color: rgb(14, 0, 0);
+        padding: 5px;
+    }
+    
+    .container .content .btn {
+        height: 50px;
+        width: 350px;
+        background-color: rgb(15, 4, 4);
+        color: chartreuse;
+        cursor: pointer;
+        font-size: 20px;
+        margin-top: 10px;
+        border-radius: 20px;
+    }
